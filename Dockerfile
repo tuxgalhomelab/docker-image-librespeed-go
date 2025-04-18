@@ -82,7 +82,7 @@ EXPOSE 8989
 
 HEALTHCHECK \
     --start-period=15s --interval=30s --timeout=3s \
-    CMD homelab healthcheck-service https://localhost:8989/
+    CMD homelab healthcheck-service http://localhost:8989/
 
 ENV USER=${USER_NAME}
 USER ${USER_NAME}:${GROUP_NAME}
