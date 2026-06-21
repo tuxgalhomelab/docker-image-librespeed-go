@@ -31,8 +31,8 @@ setup_librespeed_go_assets() {
     if [ -f ${librespeed_go_assets_dir:?}/index.html ]; then
         echo "Existing LibreSpeed Go index.html asset \"${librespeed_go_assets_dir:?/index.html}\" found"
     else
-        echo "Using the example single server full LibreSpeed Go index.html asset from ${librespeed_go_default_assets_dir:?}/example-singleServer-full.html"
-        cp ${librespeed_go_default_assets_dir:?}/example-singleServer-full.html ${librespeed_go_assets_dir:?}/index.html
+        echo "Using the example single server gauges LibreSpeed Go index.html asset from ${librespeed_go_default_assets_dir:?}/example-singleServer-gauges.html"
+        cp ${librespeed_go_default_assets_dir:?}/example-singleServer-gauges.html ${librespeed_go_assets_dir:?}/index.html
     fi
 }
 
